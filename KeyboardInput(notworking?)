@@ -1,0 +1,22 @@
+using UnityEngine;
+
+    public class KeyboardInput : Input
+    {
+        public string TurnInputName = "Horizontal";
+        public string AccelerateButtonName = "Accelerate";
+        public string BrakeButtonName = "Brake";
+
+        public Input GenerateInput() {
+            Accelerate = Input.GetButton(AccelerateButtonName);
+                Brake = Input.GetButton(BrakeButtonName);
+                TurnInput = Input.GetAxis("Horizontal");
+         //return new InputData
+          //  {
+                
+          //  };
+       
+           
+        }
+    }
+
+
